@@ -1,0 +1,18 @@
+// **** \\ STYLES_CSS // **** // 
+
+* {
+    font-family: 'Carme', sans-serif;
+}
+
+// html{
+//     opacity: 0;
+// }
+
+body {
+
+    @import "header";
+    @import "footer";
+    @import "pages/stylesGenerals";
+    @import "pages/_home";
+
+}
