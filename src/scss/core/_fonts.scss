@@ -1,0 +1,53 @@
+
+
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url('../fonts/PrimariaRegular/Gilroy-Regular.eot');
+	src: local('☺'), 
+			url('../fonts/PrimariaRegular/Gilroy-Regular.woff') format('woff'), 
+			url('../fonts/PrimariaRegular/Gilroy-Regular.ttf') format('truetype'), 
+			url('../fonts/PrimariaRegular/Gilroy-Regular.otf') format('opentype'), 
+			url('../fonts/PrimariaRegular/Gilroy-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('../fonts/PrimariaBold/Gilroy-Bold.eot');
+	src: local('☺'), 
+			url('../fonts/PrimariaBold/Gilroy-Bold.woff') format('woff'), 
+			url('../fonts/PrimariaBold/Gilroy-Bold.ttf') format('truetype'), 
+			url('../fonts/PrimariaBold/Gilroy-Bold.otf') format('opentype'), 
+			url('../fonts/PrimariaBold/Gilroy-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Avenir-Regular';
+	src: url('../fonts/SecundariaRegular/AvenirLTStd-Book.eot');
+	src: local('☺'), 
+			url('../fonts/SecundariaRegular/AvenirLTStd-Book.woff') format('woff'), 
+			url('../fonts/SecundariaRegular/AvenirLTStd-Book.ttf') format('truetype'), 
+			url('../fonts/SecundariaRegular/AvenirLTStd-Book.otf') format('opentype'), 
+			url('../fonts/SecundariaRegular/AvenirLTStd-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Avenir-Bold';
+	src: url('../fonts/SecundariaBold/AvenirLTStd-Black.eot');
+	src: local('☺'), 
+			url('../fonts/SecundariaBold/AvenirLTStd-Black.woff') format('woff'), 
+			url('../fonts/SecundariaBold/AvenirLTStd-Black.ttf') format('truetype'), 
+			url('../fonts/SecundariaBold/AvenirLTStd-Black.otf') format('opentype'), 
+			url('../fonts/SecundariaBold/AvenirLTStd-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

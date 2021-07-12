@@ -1,0 +1,133 @@
+@mixin links{
+    font-size: var(--h6);
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    font-family: var(--secundariaBold);
+    cursor: pointer;
+    
+    &::after{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 15px;
+        background: url('../img/flecha.svg') no-repeat center / contain;
+        margin-left: 10px;
+        transform: rotate(90deg);
+        transition: .3s ease-in-out all;
+    }
+
+    &:hover{
+        text-decoration: none;
+
+        &::after{
+            margin-left: 20px;
+        }
+    }
+}
+
+@mixin cardEpisodio {
+    &__main{
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        &--img{
+            width: 165px;
+            height: 165px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+
+        &__info{
+            flex: 0 0 80%;
+        }
+
+        p{
+            font-size: var(--h5);
+            color: var(--blanco);
+            margin: 15px 0 30px;
+        }
+
+        &__links{
+            width: 100%;
+
+            &__logos{
+                img{
+                    max-width: 25px;
+                    margin-left: 20px;
+                    transition: .2s ease-in all;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+       
+    }
+
+    &__sec{
+        background: radial-gradient(ellipse at center, rgba(101,15,116,1) 0%, rgba(51,8,58,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#650f74', endColorstr='#33083a', GradientType=1 );
+        border-radius: 10px 10px 60px 10px;
+        padding: 30px;
+        width: 95%;
+        
+        h3{
+            font-size: var(--h4);
+        }
+
+        p{
+            font-size: var(--h6);
+        }
+    }
+
+    /// MOBILE
+    @media (max-width:992px) {
+        &__main{
+            flex-direction: column;
+            border-radius: 10px 10px 40px !important;
+
+            &--img{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__sec{
+            padding: 20px 15px;
+            width: 100%;
+            border-radius: 10px 10px 40px 10px;
+        }
+    }
+}
+
+@mixin gradiente-negro {
+    background: rgba(0,0,0,0);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(24%, rgba(0,0,0,1)), color-stop(80%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+@mixin gradiente-imagenes {
+    background: rgba(101,15,116,0);
+background: -moz-linear-gradient(top, rgba(101,15,116,0) 0%, rgba(35,8,39,0.9) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(101,15,116,0)), color-stop(100%, rgba(35,8,39,0.9)));
+background: -webkit-linear-gradient(top, rgba(101,15,116,0) 0%, rgba(35,8,39,0.9) 100%);
+background: -o-linear-gradient(top, rgba(101,15,116,0) 0%, rgba(35,8,39,0.9) 100%);
+background: -ms-linear-gradient(top, rgba(101,15,116,0) 0%, rgba(35,8,39,0.9) 100%);
+background: linear-gradient(to bottom, rgba(101,15,116,0) 0%, rgba(35,8,39,0.9) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#650f74', endColorstr='#230827', GradientType=0 );
+}

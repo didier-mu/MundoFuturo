@@ -1,27 +1,25 @@
-//COMPONENTS
-
 
 //var
-@import "layout/vars";
+@import "core/vars";
 
 //fonts
-@import "layout/fonts";
-
-
+@import "core/fonts";
 
 //mixins
-@import "helpers/mixins";
+@import "core/mixins";
 
-//utilities
-@import "helpers/utilities";
 
 //general styles
 @import "layout/body";
+
 
 //media viewports
 @import "layout/media";
 
 
-
+//COMPONENTS
+@import "components/forms";
+@import "components/modals";
+@import "components/slider";
 
 

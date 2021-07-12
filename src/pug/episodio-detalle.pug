@@ -1,0 +1,122 @@
+- titulo = "Mundo Futuro | Episodio"
+
+doctype
+html(lang='es')
+
+    include includes/head.pug
+
+    body.body-episodios
+        include includes/header.pug
+
+        main.episodios.episodioDetalle
+            section.hero
+                .container-fluid.p-0
+                    .row
+                        .col-12
+                            .hero--img
+                                picture 
+                                    source(media="(max-width:992px )", srcset="img/bannerDetalleMobile.webp",  type="image/webp")
+                                    source(media="(max-width:992px )", srcset="img/bannerDetalleMobile.jpg")
+                                    source(srcset="img/bannerDetalle.webp", type="image/webp")
+                                    img.img-fluid(src="img/bannerDetalle.jpg", alt="Mundo Futuro Episodio")
+            section.referencias
+                .container
+                    .row
+                        .col-12
+                            .hero--titulo 
+                                h1 
+                                    b 006: Delincuencia automatizada. Socialización humana con 3D modelling. La primera galería VR/NFT
+                                
+                                p La industria negra del ransomware y los ataques de hackers tiene un valoranual de 6 trillones de dólares, más que Amazon, Google, Apple y Microsoft juntos. ¿Por qué? ¿Quiénes están detrás de esto? También hablamos sobre la más nueva tecnología holográfica que junto con IA nos permitiría -en un Mundo Futuro- tener conversaciones con nuestros ídolos que ya fallecieron. Además, hablamos de otro tipo de espacios virtuales que está emergiendo: las galerías de arte.
+
+                                .hero--links.d-flex.justify-content-center.align-items-center
+                                    h4
+                                        b Escucha el episodio en:
+
+                                    a.text-decoration-none(href="https://open.spotify.com/show/5ZldFoVYM0Orm9ai06t0o4?si=IsEvOWeiSFyA8i04zbtOHQ&dl_branch=1", target="_blank", rel="noopener noreferrer") 
+                                        img.img-fluid(src="img/spotify-logo.svg", alt="Spotify Mundo Futuro", loading="lazy")
+                                    
+                                    a.text-decoration-none(href="https://podcasts.apple.com/cr/podcast/mundo-futuro/id1569244095?l=en", target="_blank", rel="noopener noreferrer")
+                                        img.img-fluid(src="img/podcast.svg", alt="Apple Podcast Mundo Futuro" loading="lazy")
+            
+                    .row.justify-content-center
+                        .col-lg-10
+                            .referencias__box.d-flex.flex-column.align-items-center
+                                h3
+                                    b Referencias: 
+                                    span Del pixel al espacio
+                                
+                                .referencias__box__links
+                                    a.text-decoration-none(href="#!", target="_blank", rel="noopener noreferrer") Enlace referencia del tema
+                                    
+                                    a.text-decoration-none(href="#!", target="_blank", rel="noopener noreferrer") Enlace referencia del tema
+                                    
+                                    a.text-decoration-none(href="#!", target="_blank", rel="noopener noreferrer") Enlace referencia del tema
+                                
+                                .swiper-container.sliderRefes
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            iframe(src="https://www.youtube.com/embed/BN624m0QJIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen, loading="lazy")
+                                        .swiper-slide
+                                            iframe(src="https://www.youtube.com/embed/BN624m0QJIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen,  loading="lazy")
+                                        
+                                    
+                                    
+                                    .swiper-pagination 
+                                    .swiper-nav
+                                        .swiper-button-prev
+                                        .swiper-button-next
+
+                        .col-lg-10
+                            .referencias__box.d-flex.flex-column.align-items-center
+                                h3
+                                    b Referencias: 
+                                    span La nueva cartografía
+                                
+                                .referencias__box__links
+                                    a.text-decoration-none(href="#!", target="_blank", rel="noopener noreferrer") Enlace referencia del tema
+                                    
+                                    a.text-decoration-none(href="#!", target="_blank", rel="noopener noreferrer") Enlace referencia del tema
+                                    
+                                    a.text-decoration-none(href="#!", target="_blank", rel="noopener noreferrer") Enlace referencia del tema
+                    .row.episodios--last
+                        .col-12
+                            h4 
+                                b Otros espisodios
+
+                        .col-lg-6 
+                            .episodios__main.episodios__sec.d-flex.flex-column
+                                h3 
+                                    b 005: Del pixel al espacio. La nueva cartografía. Trazando el futuro.
+                                p La resolución de los satélites más poderosos son capaces de ver el detalle de hasta 10cm, y esos no son propiedad de Google. ¿Qué implicaciones tiene en nuestra privacidad que los gobiernos tengan este poder? Además, hablamos sobre el valor de los bienes raíces en el mundo virtual con dos de sus mayores expertos: Hrish Lotlikar, CEO de Superworld; y Adam Bém, COO de Victoria VR.
+                                
+                                .episodios__main__links.d-flex.align-items-center.justify-content-between
+                                    a.linkFlecha(href="#!") Conoce más
+
+                                    .episodios__main__links__logos 
+                                        a.text-decoration-none(href="https://open.spotify.com/episode/0oyRALbxYMB8Olunfp3rr1?si=LHtpIQtHRv2aC4tuWebvxw&dl_branch=1", target="_blank", rel="noopener noreferrer") 
+                                            img.img-fluid(src="img/spotify-logo.svg", alt="Spotify Mundo Futuro", loading="lazy")
+                                        
+                                        a.text-decoration-none(href="https://podcasts.apple.com/cr/podcast/005-del-pixel-al-espacio-la-nueva-cartograf%C3%ADa-trazando/id1569244095?i=1000527254084&l=en", target="_blank", rel="noopener noreferrer") 
+                                            img.img-fluid(src="img/podcast.svg", alt="Apple Podcast Mundo Futuro", loading="lazy")
+                        
+                        .col-lg-6 
+                            .episodios__main.episodios__sec.d-flex.flex-column
+                                h3 
+                                    b 004: Crypto, Moda AR y el mundo subterráneo de Elon
+                                    
+                                p Un mundo sin billetes, ni monedas. ¿Qué tan lejos estamos -o qué tan cerca- de olvidar para siempre el dinero en efectivo? Ya tenemos la tecnología y los mecanismos económicos, entonces ¿qué hace falta? Lo mismo podemos decir de los lentes de realidad aumentada: ya están ahí, solo es cuestión de que el futuro nos alcance a todos. Además, ¿qué se está excavando debajo de Las Vegas?
+                                
+                                .episodios__main__links.d-flex.align-items-center.justify-content-between
+                                    a.linkFlecha(href="#!") Conoce más
+
+                                    .episodios__main__links__logos 
+                                        a(href="https://open.spotify.com/episode/5GUmV9IP0YiU90myjnhhVX?si=nPps9Eg8QNqyxBDu_m4zdA&dl_branch=1", target="_blank", rel="noopener noreferrer") 
+                                            img.img-fluid(src="img/spotify-logo.svg", alt="Spotify Mundo Futuro", loading="lazy")
+                                        
+                                        a(href="https://podcasts.apple.com/cr/podcast/004-crypto-moda-ar-y-el-mundo-subterr%C3%A1neo-de-elon/id1569244095?i=1000526395618&l=en", target="_blank", rel="noopener noreferrer") 
+                                            img.img-fluid(src="img/podcast.svg", alt="Apple Podcast Mundo Futuro", loading="lazy")
+
+
+
+        include includes/footer.pug

@@ -1,7 +1,7 @@
 {
-  "name": "json-example",
+  "name": "mundo-futuro",
   "version": "1.0.0",
-  "description": "test json y npm",
+  "description": "mundo futuro",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,12 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
     "gulp-concat-to-json": "^1.0.3",
     "gulp-cssmin": "0.2.0",
+    "gulp-ext-replace": "^0.3.0",
     "gulp-headerfooter": "^1.0.3",
     "gulp-imagemin": "^3.4.0",
     "gulp-less": "^3.3.0",
@@ -23,16 +24,19 @@
     "gulp-path": "3.0.3",
     "gulp-pug": "^4.0.1",
     "gulp-replace": "^0.6.1",
+    "gulp-replace-file": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-text2json": "^0.1.2",
     "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^4.0.1",
+    "imagemin-webp": "^6.0.0",
     "jsonfile": "^5.0.0",
     "request": "^2.88.0",
     "request-json": "^0.6.4"
   },
   "dependencies": {
-    "gulp-csvtojson": "^0.2.0",
     "pug": "^2.0.4"
   }
 }

@@ -50,3 +50,5 @@ Temporary Items
 src/.vscode
 src/.htaccess
 
+# repara el error de 'primoldials'
+npm-shrinkwrap.json

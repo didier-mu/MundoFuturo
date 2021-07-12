@@ -1,0 +1,98 @@
+@mixin boton {
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    height: 45px;
+    min-width: 150px;
+    font-size: var(--h5);
+    font-family: var(--secundariaBold);
+    background: var(--blanco);
+    color: var(--secundario);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out all;
+    cursor: pointer;
+
+    input{
+        appearance: none;
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size: var(--h5);
+        font-family: var(--secundariaBold);
+        color: var(--secundario);
+    }
+    
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        transform: scale(1.06, 1.2);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: transparent;
+        border: 1px solid var(--blanco);
+        transition: .3s ease-in-out all;
+    }
+
+    &:hover{
+        // animation: animBoton 1s ease-in-out 1 forwards;
+        &::after{
+            transform: scale(1.15, 1.4);
+        }
+    }
+
+}
+
+@mixin input {
+
+    input, textarea{
+        appearance: none;
+        outline: none;
+        border: none;
+        padding: 0 15px;
+        height: 45px;
+        min-width: 150px;
+        width: 100%;
+        font-size: var(--h6);
+        font-family: var(--secundariaRegular);
+        background: var(--secundario);
+        color: var(--blanco);
+
+        &::placeholder{
+            color: var(--blanco);
+        }
+
+        &:-webkit-autofill, 
+        &:-webkit-autofill:hover, 
+        &:-webkit-autofill:focus{
+            background: var(--secundario);
+        }
+        
+    }
+
+    textarea{
+        resize: none;
+        padding: 10px 15px;
+    }
+
+    .error-input{
+        color: red;
+        font-size: var(--h6);
+    }
+    
+}
+
+
+
+.boton{
+    @include boton;
+}
+
+.input__group{
+    @include input;
+}

@@ -1,13 +1,17 @@
 - ruta = ""
 
 head
-
+    
     meta(charset='utf-8')
-    link(rel="shortcut icon", href=ruta+"img/logos/favicon.ico", type="image/x-icon")
+    link(rel="preload" href="css/styles.min.css" as="style")
+    link(rel="preload" href="js/scripts.min.js" as="script")
+
+    link(rel="shortcut icon", href=ruta+"img/favicon.png", type="image/x-icon")
 
     title #{titulo}
 
     link(rel="stylesheet", href=ruta+"css/styles.min.css")
-    script(src=ruta+"js/scripts.min.js", async defer)
-    
+    script(src=ruta+"js/scripts.min.js", defer)
+    script(src=ruta+"js/functions-forms.js", async defer)
+
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")

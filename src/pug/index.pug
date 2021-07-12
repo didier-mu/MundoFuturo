@@ -1,4 +1,4 @@
-- titulo = "Title"
+- titulo = "Mundo Futuro"
 
 
 doctype
@@ -7,18 +7,313 @@ html(lang='es')
     include includes/head.pug
 
 
-    body.home
+    body
         include includes/header.pug
 
+        main.home
+            section.hero
+                
+                .container 
+                    .row.banner
+                        .col-12
+                            .hero--logo.d-flex.flex-column
+                                .hero--logo--sonoro.d-flex.align-items-center
+                                    h4 Un podcast de 
+                                    img.img-fluid#logoSonoro(src="img/logoSonoro.svg", alt="Logo Sonoro", loading="lazy")
+                                
+                                img.img-fluid#logoMundo(src="img/logo.svg", alt="Logo Mundo Futuro", loading="lazy")
+
+                            .hero--links.d-flex.flex-column.align-items-center
+                                h5 
+                                    b Escucha y suscríbete en:
+                                
+                                .hero--links--logos.d-flex
+                                    a.text-decoration-none(href="https://twitter.com/mundofuturo_", target="_blank", rel="noopener noreferrer") 
+                                        img.img-fluid(src="img/twitter.svg", alt="Twitter Mundo Futuro")
+                                        h5 @mundofuturo_
+
+                                    a.text-decoration-none(href="https://open.spotify.com/show/5ZldFoVYM0Orm9ai06t0o4?si=IsEvOWeiSFyA8i04zbtOHQ&dl_branch=1", target="_blank", rel="noopener noreferrer") 
+                                        img.img-fluid(src="img/spotify-logo.svg", alt="Spotify Mundo Futuro", loading="lazy")
+                                        h5 Spotify
+                                    
+                                    a.text-decoration-none(href="https://podcasts.apple.com/cr/podcast/mundo-futuro/id1569244095?l=en", target="_blank", rel="noopener noreferrer")
+                                        img.img-fluid(src="img/podcast.svg", alt="Apple Podcast Mundo Futuro" loading="lazy")
+                                        h5 Apple Podcast
+
+
+            
+                    .row.desc
+                        .col-12.col-lg-10
+                            h1 
+                                span 
+                                    b El mundo cambiará más en los próximos diez años que en los últimos cien. 
+                                
+                                | Un podcast en donde 
+                                b Jorge Alor, Mario Valle y Jaime Limón, 
+                                | fundadores de la legendaria Revista Sputnik, discuten las tecnologías y tendencias en aceleración exponencial que definen el fin de una era. 
+                                br 
+                                br
+                                | No puedes predecir el futuro, pero puedes explorarlo.
+
+            section.follow
+                .container 
+                    .row 
+                        .col-12.d-flex
+                            h2 
+                                span 
+                                    b Escúchanos 
+                                br
+                                | a través de Spotify 
+                                br 
+                                | y Apple Podcast
+                            
+                            .follow--logos.d-flex
+                                a.text-decoration-none(href="#!", target="_blank", rel="noopener noreferrer") 
+                                    img.img-fluid(src="img/spotify-logo.svg", alt="Spotify Mundo Futuro", loading="lazy")
+                                    h5 Spotify
+                                
+                                a.text-decoration-none(href="#!", target="_blank", rel="noopener noreferrer") 
+                                    img.img-fluid(src="img/podcast.svg", alt="Apple Podcast Mundo Futuro", loading="lazy")
+                                    h5 Apple Podcast
+
+            section.about.s1#bios
+                .container 
+                    .row.about--desc
+                        .col-12.d-flex
+                            h2 
+                                b Bios
+
+                    .row.cards
+                        .col-lg-4
+                            .about__card#card1
+                                .about__card__img
+                                    picture 
+                                        source(srcset="img/jorgealor.webp", type="image/webp")
+                                        img(src="img/jorgealor.jpeg", alt="Jorge Alor", loading="lazy")
+                                
+                                h2 Jorge 
+                                    span
+                                        b Alor
+                            
+                        .col-lg-4 
+                            .about__card#card2
+                                .about__card__img
+                                    picture 
+                                        source(srcset="img/mariovalle3.webp", type="image/webp")
+                                        img(src="img/mariovalle3.jpeg", alt="Mario Valle", loading="lazy")
+                                
+                                h2 Mario  
+                                    span
+                                        b Valle
+                        
+                        .col-lg-4 
+                            .about__card#card3
+                                .about__card__img
+                                    picture 
+                                        source(srcset="img/jaimelimon.webp", type="image/webp")
+                                        img(src="img/jaimelimon.jpeg", alt="Jaime Limón", loading="lazy")
+                                
+                                h2 Jaime 
+                                    span
+                                        b Limón
+            
+                    .row.frase
+                        .col-12
+                            h2 No puedes predecir el futuro, 
+                                br 
+                                | pero 
+                                b sí puedes explorarlo.
+                            
+            section.episodios
+                .container 
+                    .row
+                        .col-12
+                            h2 
+                                b Episodios
+                    
+                    .row 
+                        .col-12
+                            .episodios__main.d-flex
+                                .episodios__main--img 
+                                    img.img-fluid(src="img/poster.png", alt="Mundo Futuro Episodio", loading="lazy")
+                                
+                                .episodios__main__info
+                                    h3 
+                                        b 006: Delincuencia automatizada. Socialización humana con 3D modelling. La primera galería VR/NFT
+                                    
+                                    p La industria negra del ransomware y los ataques de hackers tiene un valoranual de 6 trillones de dólares, más que Amazon, Google, Apple y Microsoft juntos. ¿Por qué? ¿Quiénes están detrás de esto? También hablamos sobre la más nueva tecnología holográfica que junto con IA nos permitiría -en un Mundo Futuro- tener conversaciones con nuestros ídolos que ya fallecieron. Además, hablamos de otro tipo de espacios virtuales que está emergiendo: las galerías de arte.
+                                    
+                                    .episodios__main__links.d-flex.align-items-center.justify-content-between
+                                        a.linkFlecha(href="episodio-detalle.html") Conoce más
+
+                                        .episodios__main__links__logos 
+                                            a.text-decoration-none(href="https://open.spotify.com/episode/0I1l23dVmV2MDCqP6S9PiZ?si=y9bJqSUkS-S7uESyTXL9Dg&dl_branch=1", target="_blank", rel="noopener noreferrer") 
+                                                img.img-fluid(src="img/spotify-logo.svg", alt="Spotify Mundo Futuro", loading="lazy")
+                                            
+                                            a.text-decoration-none(href="https://podcasts.apple.com/cr/podcast/006-delincuencia-automatizada-socializaci%C3%B3n-humana/id1569244095?i=1000527979722&l=en", target="_blank", rel="noopener noreferrer") 
+                                                img.img-fluid(src="img/podcast.svg", alt="Apple Podcast Mundo Futuro", loading="lazy")
+                  
+                    .row.episodios--last
+                        .col-lg-6 
+                            .episodios__main.episodios__sec.d-flex.flex-column
+                                h3 
+                                    b 005: Del pixel al espacio. La nueva cartografía. Trazando el futuro.
+                                p La resolución de los satélites más poderosos son capaces de ver el detalle de hasta 10cm, y esos no son propiedad de Google. ¿Qué implicaciones tiene en nuestra privacidad que los gobiernos tengan este poder? Además, hablamos sobre el valor de los bienes raíces en el mundo virtual con dos de sus mayores expertos: Hrish Lotlikar, CEO de Superworld; y Adam Bém, COO de Victoria VR.
+                                
+                                .episodios__main__links.d-flex.align-items-center.justify-content-between
+                                    a.linkFlecha(href="episodio-detalle.html") Conoce más
+
+                                    .episodios__main__links__logos 
+                                        a.text-decoration-none(href="https://open.spotify.com/episode/0oyRALbxYMB8Olunfp3rr1?si=LHtpIQtHRv2aC4tuWebvxw&dl_branch=1", target="_blank", rel="noopener noreferrer") 
+                                            img.img-fluid(src="img/spotify-logo.svg", alt="Spotify Mundo Futuro", loading="lazy")
+                                        
+                                        a.text-decoration-none(href="https://podcasts.apple.com/cr/podcast/005-del-pixel-al-espacio-la-nueva-cartograf%C3%ADa-trazando/id1569244095?i=1000527254084&l=en", target="_blank", rel="noopener noreferrer") 
+                                            img.img-fluid(src="img/podcast.svg", alt="Apple Podcast Mundo Futuro", loading="lazy")
+                        
+                        .col-lg-6 
+                            .episodios__main.episodios__sec.d-flex.flex-column
+                                h3 
+                                    b 004: Crypto, Moda AR y el mundo subterráneo de Elon
+                                    
+                                p Un mundo sin billetes, ni monedas. ¿Qué tan lejos estamos -o qué tan cerca- de olvidar para siempre el dinero en efectivo? Ya tenemos la tecnología y los mecanismos económicos, entonces ¿qué hace falta? Lo mismo podemos decir de los lentes de realidad aumentada: ya están ahí, solo es cuestión de que el futuro nos alcance a todos. Además, ¿qué se está excavando debajo de Las Vegas?
+                                
+                                .episodios__main__links.d-flex.align-items-center.justify-content-between
+                                    a.linkFlecha(href="episodio-detalle.html") Conoce más
+
+                                    .episodios__main__links__logos 
+                                        a.text-decoration-none(href="https://open.spotify.com/episode/5GUmV9IP0YiU90myjnhhVX?si=nPps9Eg8QNqyxBDu_m4zdA&dl_branch=1", target="_blank", rel="noopener noreferrer") 
+                                            img.img-fluid(src="img/spotify-logo.svg", alt="Spotify Mundo Futuro", loading="lazy")
+                                        
+                                        a.text-decoration-none(href="https://podcasts.apple.com/cr/podcast/004-crypto-moda-ar-y-el-mundo-subterr%C3%A1neo-de-elon/id1569244095?i=1000526395618&l=en", target="_blank", rel="noopener noreferrer") 
+                                            img.img-fluid(src="img/podcast.svg", alt="Apple Podcast Mundo Futuro", loading="lazy")
+                        
+                        .col-12.d-flex.align-items-center.justify-content-center
+                            a.text-decoration-none(href="episodios.html") 
+                                button.boton.primario MÁS EPISODIOS
+
+            section.contacto.s3#contacto
+                .container 
+                    .row
+                        .col-12
+                            h5 ¿Quieres saber de algo más?
+                            h2 
+                                b Escríbenos
+                        
+                        
+                            form.d-flex#formContacto
+                                .input__group
+                                    input#name(type="text", name="", placeholder="Nombre")
+                                
+                                .input__group
+                                    input#email(type="text", name="", placeholder="Email")
+                                
+                                .input__group
+                                    input#telefono(type="text", name="", placeholder="Teléfono")
+                                
+                                .input__group
+                                    textarea#mensaje(placeholder="Mensaje" rows="4" cols="50")
+
+                                .boton.primario#enviarContacto
+                                    input(type="submit", value="ENVIAR")
+                                     
+
         include includes/footer.pug
-                                                
+
+        .perfiles.modal#modal1(tabindex='-1' role='dialog' data-backdrop="static" data-keyboard="false")
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-body
+                        button.close(type='button')
+                        .container-fluid 
+                            .row
+                                .col-lg-6.perfiles__colImg
+                                    .perfiles__colImg__img
+                                        picture 
+                                            source(srcset="img/jorgealor.webp", type="image/webp")
+                                            img(src="img/jorgealor.jpeg", alt="Jorge Alor", loading="lazy")
+                                
+                                .col-lg-6.perfiles__info.d-flex.flex-column
+                                    h2 Jorge 
+                                        span
+                                            b Alor
+
+                                    p Inmerso en el mundo digital desde su infancia, Jorge Alor ha trabajado en diversos proyectos enfocados a la innovación digital. Después de fundar dos revistas de primer nivel en la cultura digital de México (Sputnik y Atomix), Jorge creó BNN, una agencia de marketing digital pionera y una de las primeras en utilizar datos para desarrollar, optimizar y personalizar campañas basadas en algoritmos.
 
 
+                                    a.linkRedes(href="https://twitter.com/elpadrino", target="_blank", rel="noopener noreferrer") 
+                                        img.img-fluid(src="../img/twitter.svg", alt="Twitter Mundo Futuro", loading="lazy")
+                                        |@elpadrino
+
+                                    .perfiles__info--paginador.d-flex.justify-content-between
+                                        h5.linkFlecha.prev Jaime Limón
+                                        h5.linkFlecha.next Mario Valle
+                                
+        .perfiles.modal#modal2(tabindex='-1' role='dialog' data-backdrop="static" data-keyboard="false")
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-body
+                        button.close(type='button')
+                        .container-fluid 
+                            .row
+                                .col-lg-6.perfiles__colImg
+                                    .perfiles__colImg__img
+                                        picture 
+                                            source(srcset="img/mariovalle3.webp", type="image/webp")
+                                            img(src="img/mariovalle3.jpeg", alt="Mario Valle", loading="lazy")
+                                
+                                .col-lg-6.perfiles__info.d-flex.flex-column
+                                    h2 Mario 
+                                        span
+                                            b Valle
+
+                                    p Es el fundador de Altered Ventures, un fondo de inversión para videojuegos, VR / AR y E-Sports, con sede en Silicon Valley. Trabajó en Electronic Arts durante 11 años, primero como Director de América Latina y luego como Director de Desarrollo de Negocios para Mercados Emergentes. Mario ha sido un inversor en los mercados públicos desde 2010 y fundó InvestorCamp en 2018, una iniciativa de educación bursátil para capacitar a inversores principiantes. Fue cofundador de Electronic Game Show, Latingamer, Gaming Partners y Sputnik Cultura Digital Magazine en sus primeros años.
 
 
+                                    a.linkRedes(href="https://twitter.com/bilbeny", target="_blank", rel="noopener noreferrer") 
+                                        img.img-fluid(src="../img/twitter.svg", alt="Twitter Mundo Futuro", loading="lazy")
+                                        |@bilbeny
+
+                                    .perfiles__info--paginador.d-flex.justify-content-between
+                                        h5.linkFlecha.prev Jorge Alor
+                                        h5.linkFlecha.next Jaime Limón
+
+        .perfiles.modal#modal3(tabindex='-1' role='dialog' data-backdrop="static" data-keyboard="false")
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-body
+                        button.close(type='button')
+                        .container-fluid 
+                            .row
+                                .col-lg-6.perfiles__colImg
+                                    .perfiles__colImg__img
+                                        picture 
+                                            source(srcset="img/jaimelimon.webp", type="image/webp")
+                                            img(src="img/jaimelimon.jpeg", alt="Kaime Limón", loading="lazy")
+                                
+                                .col-lg-6.perfiles__info.d-flex.flex-column
+                                    h2 Jaime 
+                                        span
+                                            b Limón
+
+                                    p Creció con los videojuegos y la idea de que la tecnología cambiaría el mundo. Descubrió Internet por primera vez en 1991 y nunca miró hacia atrás. Jaime es el fundador de Aldea Internet Agency y editor fundador de Sputnik Magazine. Ha trabajado en marketing en Microsoft desde 1998, lanzó más de 400 productos para América Latina y fue director de Xbox en México. Hoy es el responsable del marketing global de los nuevos lanzamientos de Minecraft.
 
 
+                                    a.linkRedes(href="https://twitter.com/MrLemon", target="_blank", rel="noopener noreferrer") 
+                                        img.img-fluid(src="../img/twitter.svg", alt="Twitter Mundo Futuro", loading="lazy")
+                                        |@MrLemon
+                                    
+                                    .perfiles__info--paginador.d-flex.justify-content-between
+                                        h5.linkFlecha.prev Mario Valle
+                                        h5.linkFlecha.next Jorge Alor
 
+        .modal.fade#thankyou(tabindex='-1' role='dialog' data-backdrop="static" data-keyboard="false")
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-body
+                        
+                        .container 
+                            h2 
+                                b ¡GRACIAS POR TU MENSAJE! 
+                            p Hemos recibido tu mensaje. Nos pondremos en contacto contigo
 
-
-
+                            button.boton(data-dismiss="modal" aria-label="Close") Continuar

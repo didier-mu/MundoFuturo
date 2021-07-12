@@ -1,0 +1,17 @@
+.footer{
+    background: var(--negro);
+    padding: 30px 0;
+
+    &--redes{
+        margin: 20px auto 30px;
+
+        img{
+            max-width: 30px;
+            margin: 0 10px;
+        }
+    }
+
+    h6{
+        font-size: var(--min);
+    }
+}

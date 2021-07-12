@@ -1,0 +1,38 @@
+.swiper{
+
+    &-slide{
+        padding: 0 30px;
+    }
+    
+    &-button-next, &-button-prev{
+         color: var(--blanco) !important;
+         width: 50px !important;
+         height: 50px !important;
+
+         &::after{
+             font-size: 1.5em !important;
+         }
+    }
+
+    &-button-next{  
+        right: 0px !important;
+    }
+
+    &-button-prev{  
+        left: 0px !important;
+    }
+
+    &-pagination{
+        position: relative !important;
+        bottom: 0 !important;
+
+        &-bullet{
+            background: var(--blanco) !important;
+            opacity: 1 !important;
+        }
+
+        &-bullet-active{
+            background: var(--primario) !important;
+        }
+    }
+}

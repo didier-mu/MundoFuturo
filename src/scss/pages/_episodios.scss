@@ -1,0 +1,223 @@
+&.body-episodios{
+    .header--logo{
+        opacity: 1;
+    }
+
+    .episodios{
+        background: radial-gradient(ellipse at center, rgba(101,15,116,1) 0%, rgba(51,8,58,1) 100%);
+        padding: 150px 0 80px;
+        position: relative;
+        z-index: 0;
+        
+        &::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url('../img/lineas.svg') no-repeat center / cover;
+        }
+    
+        
+        @include cardEpisodio;  
+    
+        &__main{
+            // background: radial-gradient(ellipse at center, rgba(101,15,116,1) 0%, rgba(51,8,58,.9) 100%);
+            background: radial-gradient(ellipse at center, rgba(101,15,116,1) 0%, rgba(35,8,39,.9) 100%);
+            border-radius: 10px 10px 60px 10px;
+            padding: 30px;
+        }
+    }
+}
+
+
+.episodioDetalle{
+    padding: 0 !important;
+    background: none !important;
+
+    &::before{
+        display: none;
+    }
+
+    .hero{
+        &--img{
+            height: 500px;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                // background: linear-gradient(to bottom, rgba(241,231,103,0) 0%, rgba(101,15,116,1) 100%);
+                // background: linear-gradient(to bottom, #f1e76700 0%, #33083A 100%);
+                // opacity: 0.6;
+                @include gradiente-imagenes;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &--titulo{
+            transform: translateY(-50px);
+            
+            p{
+                font-size: var(--h4);
+                color: var(--blanco);
+                margin:30px auto;
+            }
+        }
+
+        &--links{
+            flex-wrap: wrap;
+            margin: 70px auto 40px;
+
+            a{
+                &:hover {
+                   
+                    img{
+                        filter: drop-shadow(0px 0px 10px rgba(173, 41, 255, 0.9));
+                    }
+                }
+            }
+
+            h4{
+                flex: 0 0 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            img{
+                margin: 0 30px;
+                width: 65px;
+                transition: .2s ease-in-out all;
+            }
+        }
+        
+    }
+
+    .referencias{
+        background: radial-gradient(ellipse at center, rgba(101,15,116,1) 0%, rgba(51,8,58,1) 100%);
+        position: relative;
+        padding-bottom: 80px;
+        
+        &::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url('../img/lineas.svg') no-repeat center / cover;
+        }
+
+
+        &__box{
+            background: radial-gradient(ellipse at center, rgba(101,15,116,0.6) 0%, rgba(51,8,58,1) 100%);
+            border-radius: 10px 10px 60px 10px;
+            padding: 30px 0;
+            margin-bottom: 50px;
+            
+            h3{
+                border-bottom: 1px solid #fff;
+                padding-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
+
+            &__links{
+                margin: 30px auto 10px;
+
+                a{
+                    color: #fff;
+                    font-size: var(--h5);
+                    display: block;
+                    margin-bottom: 20px;
+
+                    &:hover{
+                        text-decoration: underline !important;
+                    }
+                }
+            }
+
+            .swiper{
+                &-container{
+                    width: 60%;   
+
+                    iframe{
+                        width: 90%;
+                        height: 285px;
+                        margin: auto;
+                        display: block;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .episodios--last{
+            margin-top: 50px;
+
+            h4{
+                width: 100%;
+                margin: 0px 0 30px;
+            }
+
+            .episodios__sec{
+                background: rgba(0, 0, 0, 0.6);
+                margin-top: 0;
+            }
+
+            .col-lg-6{
+                &:last-child{
+                    .episodios__sec{
+                        margin-left: auto;
+                    }
+                }
+            }  
+        }
+    }
+}
+
+/// MOBILE
+@media (max-width:992px) {
+    &.body-episodios {
+        .episodios__main{
+            padding: 20px 15px;
+        }
+    }
+
+    .episodioDetalle{
+        .hero--links img{
+            width: 50px;
+        }
+
+        .referencias{
+            &__box {
+                .swiper-container{
+                    width: 100%;
+
+                    iframe{
+                        height: calc(200px + 400 * ((100vw - 320px) / 1280));
+                    }
+                }
+            }
+
+            .episodios__main{
+                background: radial-gradient(ellipse at center, rgba(101,15,116,1) 0%, rgba(35,8,39,.9) 100%);
+            }
+            
+            .episodios--last .episodios__sec{
+                margin-bottom: 30px;
+            }
+        }
+    } 
+}

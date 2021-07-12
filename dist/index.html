@@ -2,11 +2,300 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
-    <title>Title</title>
+    <link rel="preload" href="css/styles.min.css" as="style">
+    <link rel="preload" href="js/scripts.min.js" as="script">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Mundo Futuro</title>
     <link rel="stylesheet" href="css/styles.min.css">
-    <script src="js/scripts.min.js" async defer></script>
+    <script src="js/scripts.min.js" defer></script>
+    <script src="js/functions-forms.js" async defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
-  <body class="home"></body>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 header--logo"><a href="../"> <img class="img-fluid" src="img/logo.svg" alt="Mundo Futuro"></a></div>
+          <div class="col-6 header--navegacion d-flex">
+            <div class="btn" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></div>
+            <nav class="navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navbarNav"><img class="img-fluid" id="logo" src="img/logo.svg" alt="Mundo Futuro">
+                <ul>
+                  <li id="li-s1"> <a class="text-decoration-none" href="index.html#bios">BIOS</a></li>
+                  <li id="li-s2"> <a class="text-decoration-none" href="episodios.html">EPISODIOS</a></li>
+                  <li id="li-s3"> <a class="text-decoration-none" href="index.html#contacto">CONTACTO</a></li>
+                  <div class="nav--redes"> <a class="text-decoration-none" href="https://twitter.com/mundofuturo_" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/twitter.svg" alt="Twitter Mundo Futuro"></a><a class="text-decoration-none" href="https://open.spotify.com/show/5ZldFoVYM0Orm9ai06t0o4?si=IsEvOWeiSFyA8i04zbtOHQ&amp;dl_branch=1" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="img/spotify-logo.svg" alt="Spotify Mundo Futuro"></a><a class="text-decoration-none" href="https://podcasts.apple.com/cr/podcast/mundo-futuro/id1569244095?l=en" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="img/podcast.svg" alt="Apple Podcast Mundo Futuro"></a></div>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="home">
+      <section class="hero">
+        <div class="container"> 
+          <div class="row banner">
+            <div class="col-12">
+              <div class="hero--logo d-flex flex-column">
+                <div class="hero--logo--sonoro d-flex align-items-center">
+                  <h4>Un podcast de </h4><img class="img-fluid" id="logoSonoro" src="img/logoSonoro.svg" alt="Logo Sonoro" loading="lazy">
+                </div><img class="img-fluid" id="logoMundo" src="img/logo.svg" alt="Logo Mundo Futuro" loading="lazy">
+              </div>
+              <div class="hero--links d-flex flex-column align-items-center">
+                <h5> <b>Escucha y suscríbete en:</b></h5>
+                <div class="hero--links--logos d-flex"><a class="text-decoration-none" href="https://twitter.com/mundofuturo_" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/twitter.svg" alt="Twitter Mundo Futuro">
+                    <h5>@mundofuturo_</h5></a><a class="text-decoration-none" href="https://open.spotify.com/show/5ZldFoVYM0Orm9ai06t0o4?si=IsEvOWeiSFyA8i04zbtOHQ&amp;dl_branch=1" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/spotify-logo.svg" alt="Spotify Mundo Futuro" loading="lazy">
+                    <h5>Spotify</h5></a><a class="text-decoration-none" href="https://podcasts.apple.com/cr/podcast/mundo-futuro/id1569244095?l=en" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="img/podcast.svg" alt="Apple Podcast Mundo Futuro" loading="lazy">
+                    <h5>Apple Podcast</h5></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="row desc">
+            <div class="col-12 col-lg-10">
+              <h1> <span> <b>El mundo cambiará más en los próximos diez años que en los últimos cien. </b></span>Un podcast en donde <b>Jorge Alor, Mario Valle y Jaime Limón, </b>fundadores de la legendaria Revista Sputnik, discuten las tecnologías y tendencias en aceleración exponencial que definen el fin de una era. <br><br>No puedes predecir el futuro, pero puedes explorarlo.</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="follow">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col-12 d-flex">
+              <h2> <span> <b>Escúchanos </b></span><br>a través de Spotify <br>y Apple Podcast</h2>
+              <div class="follow--logos d-flex"><a class="text-decoration-none" href="#!" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/spotify-logo.svg" alt="Spotify Mundo Futuro" loading="lazy">
+                  <h5>Spotify</h5></a><a class="text-decoration-none" href="#!" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/podcast.svg" alt="Apple Podcast Mundo Futuro" loading="lazy">
+                  <h5>Apple Podcast</h5></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about s1" id="bios">
+        <div class="container"> 
+          <div class="row about--desc">
+            <div class="col-12 d-flex">
+              <h2> <b>Bios</b></h2>
+            </div>
+          </div>
+          <div class="row cards">
+            <div class="col-lg-4">
+              <div class="about__card" id="card1">
+                <div class="about__card__img">
+                  <picture> 
+                    <source srcset="img/jorgealor.webp" type="image/webp"><img src="img/jorgealor.jpeg" alt="Jorge Alor" loading="lazy">
+                  </picture>
+                </div>
+                <h2>Jorge <span><b>Alor</b></span></h2>
+              </div>
+            </div>
+            <div class="col-lg-4"> 
+              <div class="about__card" id="card2">
+                <div class="about__card__img">
+                  <picture> 
+                    <source srcset="img/mariovalle3.webp" type="image/webp"><img src="img/mariovalle3.jpeg" alt="Mario Valle" loading="lazy">
+                  </picture>
+                </div>
+                <h2>Mario  <span><b>Valle</b></span></h2>
+              </div>
+            </div>
+            <div class="col-lg-4"> 
+              <div class="about__card" id="card3">
+                <div class="about__card__img">
+                  <picture> 
+                    <source srcset="img/jaimelimon.webp" type="image/webp"><img src="img/jaimelimon.jpeg" alt="Jaime Limón" loading="lazy">
+                  </picture>
+                </div>
+                <h2>Jaime <span><b>Limón</b></span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="row frase">
+            <div class="col-12">
+              <h2>No puedes predecir el futuro, <br>pero <b>sí puedes explorarlo.</b></h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="episodios">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-12">
+              <h2> <b>Episodios</b></h2>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-12">
+              <div class="episodios__main d-flex">
+                <div class="episodios__main--img"> <img class="img-fluid" src="img/poster.png" alt="Mundo Futuro Episodio" loading="lazy"></div>
+                <div class="episodios__main__info">
+                  <h3> <b>006: Delincuencia automatizada. Socialización humana con 3D modelling. La primera galería VR/NFT</b></h3>
+                  <p>La industria negra del ransomware y los ataques de hackers tiene un valoranual de 6 trillones de dólares, más que Amazon, Google, Apple y Microsoft juntos. ¿Por qué? ¿Quiénes están detrás de esto? También hablamos sobre la más nueva tecnología holográfica que junto con IA nos permitiría -en un Mundo Futuro- tener conversaciones con nuestros ídolos que ya fallecieron. Además, hablamos de otro tipo de espacios virtuales que está emergiendo: las galerías de arte.</p>
+                  <div class="episodios__main__links d-flex align-items-center justify-content-between"><a class="linkFlecha" href="episodio-detalle.html">Conoce más</a>
+                    <div class="episodios__main__links__logos"> <a class="text-decoration-none" href="https://open.spotify.com/episode/0I1l23dVmV2MDCqP6S9PiZ?si=y9bJqSUkS-S7uESyTXL9Dg&amp;dl_branch=1" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/spotify-logo.svg" alt="Spotify Mundo Futuro" loading="lazy"></a><a class="text-decoration-none" href="https://podcasts.apple.com/cr/podcast/006-delincuencia-automatizada-socializaci%C3%B3n-humana/id1569244095?i=1000527979722&amp;l=en" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/podcast.svg" alt="Apple Podcast Mundo Futuro" loading="lazy"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row episodios--last">
+            <div class="col-lg-6"> 
+              <div class="episodios__main episodios__sec d-flex flex-column">
+                <h3> <b>005: Del pixel al espacio. La nueva cartografía. Trazando el futuro.</b></h3>
+                <p>La resolución de los satélites más poderosos son capaces de ver el detalle de hasta 10cm, y esos no son propiedad de Google. ¿Qué implicaciones tiene en nuestra privacidad que los gobiernos tengan este poder? Además, hablamos sobre el valor de los bienes raíces en el mundo virtual con dos de sus mayores expertos: Hrish Lotlikar, CEO de Superworld; y Adam Bém, COO de Victoria VR.</p>
+                <div class="episodios__main__links d-flex align-items-center justify-content-between"><a class="linkFlecha" href="episodio-detalle.html">Conoce más</a>
+                  <div class="episodios__main__links__logos"> <a class="text-decoration-none" href="https://open.spotify.com/episode/0oyRALbxYMB8Olunfp3rr1?si=LHtpIQtHRv2aC4tuWebvxw&amp;dl_branch=1" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/spotify-logo.svg" alt="Spotify Mundo Futuro" loading="lazy"></a><a class="text-decoration-none" href="https://podcasts.apple.com/cr/podcast/005-del-pixel-al-espacio-la-nueva-cartograf%C3%ADa-trazando/id1569244095?i=1000527254084&amp;l=en" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/podcast.svg" alt="Apple Podcast Mundo Futuro" loading="lazy"></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"> 
+              <div class="episodios__main episodios__sec d-flex flex-column">
+                <h3> <b>004: Crypto, Moda AR y el mundo subterráneo de Elon</b></h3>
+                <p>Un mundo sin billetes, ni monedas. ¿Qué tan lejos estamos -o qué tan cerca- de olvidar para siempre el dinero en efectivo? Ya tenemos la tecnología y los mecanismos económicos, entonces ¿qué hace falta? Lo mismo podemos decir de los lentes de realidad aumentada: ya están ahí, solo es cuestión de que el futuro nos alcance a todos. Además, ¿qué se está excavando debajo de Las Vegas?</p>
+                <div class="episodios__main__links d-flex align-items-center justify-content-between"><a class="linkFlecha" href="episodio-detalle.html">Conoce más</a>
+                  <div class="episodios__main__links__logos"> <a class="text-decoration-none" href="https://open.spotify.com/episode/5GUmV9IP0YiU90myjnhhVX?si=nPps9Eg8QNqyxBDu_m4zdA&amp;dl_branch=1" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/spotify-logo.svg" alt="Spotify Mundo Futuro" loading="lazy"></a><a class="text-decoration-none" href="https://podcasts.apple.com/cr/podcast/004-crypto-moda-ar-y-el-mundo-subterr%C3%A1neo-de-elon/id1569244095?i=1000526395618&amp;l=en" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/podcast.svg" alt="Apple Podcast Mundo Futuro" loading="lazy"></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-center"><a class="text-decoration-none" href="episodios.html"> 
+                <button class="boton primario">MÁS EPISODIOS</button></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="contacto s3" id="contacto">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-12">
+              <h5>¿Quieres saber de algo más?</h5>
+              <h2> <b>Escríbenos</b></h2>
+              <form class="d-flex" id="formContacto">
+                <div class="input__group">
+                  <input id="name" type="text" name="" placeholder="Nombre">
+                </div>
+                <div class="input__group">
+                  <input id="email" type="text" name="" placeholder="Email">
+                </div>
+                <div class="input__group">
+                  <input id="telefono" type="text" name="" placeholder="Teléfono">
+                </div>
+                <div class="input__group">
+                  <textarea id="mensaje" placeholder="Mensaje" rows="4" cols="50"></textarea>
+                </div>
+                <div class="boton primario" id="enviarContacto">
+                  <input type="submit" value="ENVIAR">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+            <h5> <b>SÍGUENOS</b></h5>
+            <div class="footer--redes"> <a class="text-decoration-none" href="https://twitter.com/mundofuturo_" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="img/twitter.svg" alt="Twitter Mundo Futuro"></a><a class="text-decoration-none" href="https://open.spotify.com/show/5ZldFoVYM0Orm9ai06t0o4?si=IsEvOWeiSFyA8i04zbtOHQ&amp;dl_branch=1" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="img/spotify-logo.svg" alt="Spotify Mundo Futuro"></a><a class="text-decoration-none" href="https://podcasts.apple.com/cr/podcast/mundo-futuro/id1569244095?l=en" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="img/podcast.svg" alt="Apple Podcast Mundo Futuro"></a></div>
+            <h6>COPYRIGHT 2021 MUNDO FUTURO | SONORO</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="perfiles modal" id="modal1" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button"></button>
+            <div class="container-fluid"> 
+              <div class="row">
+                <div class="col-lg-6 perfiles__colImg">
+                  <div class="perfiles__colImg__img">
+                    <picture> 
+                      <source srcset="img/jorgealor.webp" type="image/webp"><img src="img/jorgealor.jpeg" alt="Jorge Alor" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+                <div class="col-lg-6 perfiles__info d-flex flex-column">
+                  <h2>Jorge <span><b>Alor</b></span></h2>
+                  <p>Inmerso en el mundo digital desde su infancia, Jorge Alor ha trabajado en diversos proyectos enfocados a la innovación digital. Después de fundar dos revistas de primer nivel en la cultura digital de México (Sputnik y Atomix), Jorge creó BNN, una agencia de marketing digital pionera y una de las primeras en utilizar datos para desarrollar, optimizar y personalizar campañas basadas en algoritmos.</p><a class="linkRedes" href="https://twitter.com/elpadrino" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="../img/twitter.svg" alt="Twitter Mundo Futuro" loading="lazy">@elpadrino</a>
+                  <div class="perfiles__info--paginador d-flex justify-content-between">
+                    <h5 class="linkFlecha prev">Jaime Limón</h5>
+                    <h5 class="linkFlecha next">Mario Valle</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="perfiles modal" id="modal2" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button"></button>
+            <div class="container-fluid"> 
+              <div class="row">
+                <div class="col-lg-6 perfiles__colImg">
+                  <div class="perfiles__colImg__img">
+                    <picture> 
+                      <source srcset="img/mariovalle3.webp" type="image/webp"><img src="img/mariovalle3.jpeg" alt="Mario Valle" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+                <div class="col-lg-6 perfiles__info d-flex flex-column">
+                  <h2>Mario <span><b>Valle</b></span></h2>
+                  <p>Es el fundador de Altered Ventures, un fondo de inversión para videojuegos, VR / AR y E-Sports, con sede en Silicon Valley. Trabajó en Electronic Arts durante 11 años, primero como Director de América Latina y luego como Director de Desarrollo de Negocios para Mercados Emergentes. Mario ha sido un inversor en los mercados públicos desde 2010 y fundó InvestorCamp en 2018, una iniciativa de educación bursátil para capacitar a inversores principiantes. Fue cofundador de Electronic Game Show, Latingamer, Gaming Partners y Sputnik Cultura Digital Magazine en sus primeros años.</p><a class="linkRedes" href="https://twitter.com/bilbeny" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="../img/twitter.svg" alt="Twitter Mundo Futuro" loading="lazy">@bilbeny</a>
+                  <div class="perfiles__info--paginador d-flex justify-content-between">
+                    <h5 class="linkFlecha prev">Jorge Alor</h5>
+                    <h5 class="linkFlecha next">Jaime Limón</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="perfiles modal" id="modal3" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button"></button>
+            <div class="container-fluid"> 
+              <div class="row">
+                <div class="col-lg-6 perfiles__colImg">
+                  <div class="perfiles__colImg__img">
+                    <picture> 
+                      <source srcset="img/jaimelimon.webp" type="image/webp"><img src="img/jaimelimon.jpeg" alt="Kaime Limón" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+                <div class="col-lg-6 perfiles__info d-flex flex-column">
+                  <h2>Jaime <span><b>Limón</b></span></h2>
+                  <p>Creció con los videojuegos y la idea de que la tecnología cambiaría el mundo. Descubrió Internet por primera vez en 1991 y nunca miró hacia atrás. Jaime es el fundador de Aldea Internet Agency y editor fundador de Sputnik Magazine. Ha trabajado en marketing en Microsoft desde 1998, lanzó más de 400 productos para América Latina y fue director de Xbox en México. Hoy es el responsable del marketing global de los nuevos lanzamientos de Minecraft.</p><a class="linkRedes" href="https://twitter.com/MrLemon" target="_blank" rel="noopener noreferrer"> <img class="img-fluid" src="../img/twitter.svg" alt="Twitter Mundo Futuro" loading="lazy">@MrLemon</a>
+                  <div class="perfiles__info--paginador d-flex justify-content-between">
+                    <h5 class="linkFlecha prev">Mario Valle</h5>
+                    <h5 class="linkFlecha next">Jorge Alor</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container"> 
+              <h2> <b>¡GRACIAS POR TU MENSAJE! </b></h2>
+              <p>Hemos recibido tu mensaje. Nos pondremos en contacto contigo</p>
+              <button class="boton" data-dismiss="modal" aria-label="Close">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
